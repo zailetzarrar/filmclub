@@ -1,0 +1,37 @@
+@import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
+
+body,
+textarea,
+button {
+    font-family: $font;
+    font-weight: normal;
+}
+
+p,
+address,
+ol,
+ul,
+dl,
+u,
+s,
+del,
+table,
+blockquote {
+    font-family: $font;
+    font-size: 16px;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    padding: 0;
+    list-style-type: none;
+
+    li {
+        margin: 0;
+    }
+}

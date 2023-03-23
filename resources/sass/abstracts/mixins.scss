@@ -1,0 +1,46 @@
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+
+    &::before {
+        display: block;
+        width: 100%;
+        padding-top: ($height / $width) * 100%;
+        content: '';
+    }
+
+    .image-responsive {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+@mixin respond-to ($breaktype, $breakpoint: false) {
+    $breakpointMin: map-get($breakpoints, $breaktype);
+    $breakpointMax: map-get($breakpoints, $breakpoint);
+
+    @if ($breaktype == 'until') {
+        @media(max-width: ($breakpointMax - 1)) {
+            @content;
+        }
+    }
+    @else if ($breakpoint == false) {
+        @media(min-width: $breakpointMin) {
+            @content;
+        }
+    }
+    @else if type-of($breaktype) == 'string' {
+        @media(min-width: $breakpointMin) and (max-width: $breakpointMax) {
+            @content;
+        }
+    }
+    @else {
+        @error 'No value found for `#{$breakpoint}`. ' + 'Please make sure it is defined in `$breakpoints` map.';
+    }
+}
+
+@mixin line-clamp($lines) {
+    @supports (-webkit-line-clamp: $lines) {
+        -webkit-line-clamp: $lines;
+    }
+}

@@ -1,0 +1,214 @@
+html {
+    box-sizing: border-box;
+}
+
+a,
+abbr,
+address,
+blockquote,
+body,
+caption,
+cite,
+code,
+dd,
+del,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+figure,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+iframe,
+img,
+input,
+ins,
+kbd,
+label,
+legend,
+li,
+object,
+ol,
+p,
+pre,
+q,
+samp,
+span,
+strong,
+sub,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr,
+ul,
+var {
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: 100%;
+    text-align: left;
+    vertical-align: baseline;
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+
+body {
+    font-size: 100%;
+    line-height: 1;
+    word-wrap: break-word;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+body,
+button,
+datalist,
+input,
+select,
+textarea {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: separate;
+}
+
+caption,
+td,
+th {
+    font-weight: normal;
+    text-align: left;
+}
+
+blockquote::after,
+blockquote::before,
+q::after,
+q::before {
+    content: '';
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+img,
+svg,
+textarea {
+    display: block;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+ol,
+ul {
+    padding-left: 1.3em;
+    list-style-position: outside;
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+textarea {
+    margin: 0;
+    overflow: auto;
+    resize: vertical;
+}
+
+button,
+datalist,
+input,
+textarea {
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+    background: transparent;
+    border: none;
+}
+
+a,
+button,
+input[type=checkbox],
+input[type=radio],
+input[type=submit],
+label {
+    cursor: pointer;
+}
+
+.text,
+.textarea {
+    -webkit-appearance: none;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+:active,
+:focus {
+    outline: 0;
+    transition: none;
+}

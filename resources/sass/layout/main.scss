@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 100%;
+    min-height: 100vh;
+    background: no-repeat url('/img/ellipses.svg');
+    background-color: $charade;
+    background-size: cover;
+
+    .content-lock & {
+        position: relative;
+    }
+}
+
+.main {
+    height: 100%;
+    padding: 16px;
+    overflow-x: hidden;
+
+    @include respond-to(medium) {
+        padding: 32px 16px;
+    }
+}
+
+.content {
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+}

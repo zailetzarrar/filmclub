@@ -1,0 +1,71 @@
+.pick-film-open {
+    overflow: hidden;
+}
+
+.films-modal,
+.picker-modal {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    display: none;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+
+    @include respond-to(medium) {
+        align-items: center;
+    }
+
+    &-background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#000, 0.5);
+    }
+}
+
+.films-modal {
+    .pick-film-open & {
+        display: flex;
+        opacity: 1;
+    }
+}
+
+.picker-modal {
+    &-wrapper {
+        position: absolute;
+        top: 32px;
+        left: 50%;
+        width: 100%;
+        max-width: 768px;
+        max-height: calc(100% - 32px);
+        overflow: hidden;
+        border-radius: 2px;
+        transform: translateX(-50%);
+
+        @include respond-to(medium) {
+            height: 831px;
+        }
+    }
+
+    &-dialog {
+        height: 100%;
+        padding: 32px;
+        overflow-y: auto;
+        background-color: $charade;
+
+        @include respond-to(medium) {
+            padding: 64px;
+        }
+    }
+
+    .modal-open & {
+        display: flex;
+        opacity: 1;
+    }
+
+    .films-info-bottom-input {
+        max-width: 100%;
+        margin: 16px 0;
+    }
+}

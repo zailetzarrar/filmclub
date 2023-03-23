@@ -1,0 +1,68 @@
+.header {
+    min-height: 64px;
+    background-color: $oxford;
+    box-shadow: 0 4px 16px rgba(#000, 0.1);
+
+    &-logo {
+        font-family: $font-title;
+        font-size: 24px;
+        color: #fff;
+
+        &-link {
+            img {
+                max-width: 160px;
+            }
+        }
+    }
+
+    &,
+    &-wrapper,
+    &-nav-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-nav-wrapper {
+        align-items: flex-end;
+    }
+
+    &-wrapper {
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    &-menu {
+        display: flex;
+
+        &-link {
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: 600;
+            color: $manatee;
+            transition: 0.3s color;
+    
+            &:hover {
+                color: darken($manatee, 20);
+            }
+        }
+    }
+
+    &-user-link {
+        padding: 8px 24px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #fff;
+        border: 2px solid $dodger;
+        border-radius: 24px;
+        transition: 0.3s background-color;
+
+        &:last-child {
+            margin-left: 16px;
+        }
+
+        &:hover {
+            background-color: $dodger;
+        }
+    }
+}

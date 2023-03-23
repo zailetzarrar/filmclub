@@ -1,0 +1,22 @@
+// Typography
+$font: 'Montserrat', sans-serif;
+$font-title: 'Kalam', cursive;
+
+// Colors
+$blue-haze: #c7cdde;
+$charade: #2f3242;
+$dodger: #2196f3;
+$gold: #ffc600;
+$manatee: #8e93a3;
+$monarch: #980b20;
+$oxford: #3a3e52;
+$shark: #252734;
+$storm: #656a86;
+
+//Breakpoints
+$breakpoints: (
+    'small': 420px,
+    'medium': 768px,
+    'large': 1024px,
+    'huge': 1440px,
+) !default;

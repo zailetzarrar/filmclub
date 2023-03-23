@@ -1,0 +1,13 @@
+.footer {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: $shark;
+
+    .copyright {
+        font-size: 12px;
+        font-weight: 600;
+        color: $manatee;
+        text-align: center;
+    }
+}
